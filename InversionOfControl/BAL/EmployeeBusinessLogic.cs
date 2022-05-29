@@ -15,9 +15,9 @@ namespace InversionOfControl.BAL
         IEmployeeDataAccess employeeDataAccess;
 
 
-        public EmployeeBusinessLogic()
+        public EmployeeBusinessLogic(IEmployeeDataAccess objDataAccess)
         {
-            employeeDataAccess = DataAccessFactory.GetEmployeeDataAccessObj();
+            employeeDataAccess = objDataAccess;
         }
 
 

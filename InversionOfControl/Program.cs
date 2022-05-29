@@ -1,7 +1,8 @@
 ﻿using InversionOfControl.BAL;
+using InversionOfControl.DAL;
 using InversionOfControl.DOL;
 
-EmployeeBusinessLogic BL = new EmployeeBusinessLogic();
+EmployeeBusinessLogic BL = new EmployeeBusinessLogic(new EmployeeDataAccess());
 Employee employeeDetails = BL.GetEmployeeDetails(1);
 Console.WriteLine();
 Console.WriteLine("Employee Details:");
