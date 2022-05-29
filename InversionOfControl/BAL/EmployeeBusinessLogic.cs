@@ -1,5 +1,6 @@
 ﻿using InversionOfControl.DAL;
 using InversionOfControl.DOL;
+using InversionOfControl.Factory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace InversionOfControl.BAL
 
         public EmployeeBusinessLogic()
         {
-            employeeDataAccess = new EmployeeDataAccess();  
+            employeeDataAccess = DataAccessFactory.GetEmployeeDataAccessObj();
         }
 
 
