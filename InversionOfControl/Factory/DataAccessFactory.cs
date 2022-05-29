@@ -1,4 +1,5 @@
 ﻿using InversionOfControl.DAL;
+using InversionOfControl.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace InversionOfControl.Factory
 {
     internal class DataAccessFactory
     {
-        public static EmployeeDataAccess GetEmployeeDataAccessObj()
+        public static IEmployeeDataAccess GetEmployeeDataAccessObj()
         {
             return new EmployeeDataAccess();
         }

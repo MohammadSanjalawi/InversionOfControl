@@ -1,4 +1,5 @@
 ﻿using InversionOfControl.DOL;
+using InversionOfControl.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace InversionOfControl.DAL
 {
-    internal class EmployeeDataAccess
+    internal class EmployeeDataAccess : IEmployeeDataAccess
     {
         public Employee GetEmployeeDetails(int id)
         {
